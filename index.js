@@ -7,11 +7,7 @@ console.log(`Prices: ${prices}`);
 
 //filter
 let expensive = [];
-for (const price of prices) {
-	if (price >= 20) {
-		expensive.push(price);
-	}
-}
+expensive = prices.filter((price) => price >= 20);
 console.log(`Expensive prices: ${expensive}`);
 
 //reduce
