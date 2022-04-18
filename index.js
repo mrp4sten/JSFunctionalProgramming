@@ -1,11 +1,9 @@
-// introduction
 function apply(num, f) {
 	return f(num);
 }
 
-function double(num) {
+// anonymous function
+console.log(apply(5, function (num) {
 	return num * 2;
-}
-
-console.log(apply(5, double));
+}));
 
