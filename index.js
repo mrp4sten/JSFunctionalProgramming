@@ -2,8 +2,8 @@ const dollars = ["32$", "15$", "12$", "17$", "20$"];
 
 //map
 let prices = [];
-for (let i = 0; i < dollars.length; i++) {
-	prices[i] = Number(dollars[i].slice(0, dollars[i].length - 1));
+for (let dollar of dollars) {
+	prices.push(Number(dollar.slice(0, dollar.length - 1)));
 }
 console.log(prices);
 
