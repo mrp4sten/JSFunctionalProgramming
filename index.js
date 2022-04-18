@@ -1,11 +1,15 @@
-function apply(num, f) {
-	return f(num);
+const dollars = ["32$", "15$", "12$", "17$", "20$"];
+
+//map
+let prices = [];
+for (let i = 0; i < dollars.length; i++) {
+	prices[i] = Number(dollars[i].slice(0, dollars[i].length - 1));
 }
+console.log(prices);
 
-// arrow function
-console.log(apply(5, (num) => {
-	return num * 2;
-}));
+//filter
 
-// arrow function which works same as above
-console.log(apply(5, (num) => num * 2)); 
+
+//reduce
+
+
