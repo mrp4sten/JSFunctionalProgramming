@@ -12,8 +12,7 @@ console.log(`Expensive prices: ${expensive}`);
 
 //reduce
 let sum = 0;
-for (price of expensive) {
-	sum += price;
-}
+sum = expensive.reduce((accumulator, price) => accumulator + price);
+
 console.log(`Total: ${sum}`);
 
