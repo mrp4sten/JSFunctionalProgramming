@@ -11,5 +11,9 @@ expensive = prices.filter((price) => price >= 20);
 console.log(`Expensive prices: ${expensive}`);
 
 //reduce
-
+let sum = 0;
+for (price of expensive) {
+	sum += price;
+}
+console.log(`Total: ${sum}`);
 
